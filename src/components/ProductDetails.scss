@@ -1,0 +1,25 @@
+.product-details {
+  .modal__close {
+    border: none;
+    background: none;
+    outline: none;
+
+    &:hover {
+      background-color: material-color('grey', '500');
+    }
+    &:focus {
+      background-color: material-color('grey', '100');
+    }
+    &:active {
+      outline: none;
+    }
+
+    &:before {
+      content: '\2715';
+    }
+
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

@@ -1,0 +1,10 @@
+.tags {
+  .tag {
+    &:hover {
+      cursor: pointer;
+      background-color: material-color('grey', '500');
+    }
+
+    background-color: material-color('grey', '400');
+  }
+}

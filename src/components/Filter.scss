@@ -1,0 +1,27 @@
+.filters {
+  min-height: 35px;
+
+  .filter {
+    background-color: material-color('cyan');
+
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 0;
+
+    &:hover {
+      background-color: material-color('cyan', '600');
+    }
+
+    &__remove {
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:before {
+        content: '\2715';
+      }
+
+      margin-left: 5px;
+    }
+  }
+}

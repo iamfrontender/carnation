@@ -1,0 +1,41 @@
+.product {
+  padding: 10px;
+  position: relative;
+
+  &__name:hover {
+    cursor: pointer;
+  }
+
+  &__container {
+    padding: 5px;
+
+    background-color: material-color('grey', '100');
+  }
+
+  &__details {
+    float: left;
+
+    & .tag {
+      margin-right: 5px;
+    }
+  }
+
+  &__photo {
+    margin: -5px;
+
+    width: 100px;
+    height: 100px;
+
+    float: right;
+
+    background-position: center center;
+    background-size: cover;
+
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 15px 0 rgba(0, 0, 0, .3);
+    }
+  }
+}
