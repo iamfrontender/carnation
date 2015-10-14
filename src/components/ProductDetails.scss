@@ -1,18 +1,18 @@
 .product-details {
-  .modal__close {
-    border: none;
-    background: none;
-    outline: none;
 
-    &:hover {
-      background-color: material-color('grey', '500');
-    }
-    &:focus {
-      background-color: material-color('grey', '100');
-    }
-    &:active {
-      outline: none;
-    }
+  &__photo img {
+    width: 100%;
+  }
+
+  &__info {
+    padding: 10px;
+  }
+
+  .modal__close {
+    width: 50px;
+    height: 50px;
+
+    @include button(material-color('grey', '100'));
 
     &:before {
       content: '\2715';

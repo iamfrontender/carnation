@@ -1,8 +1,11 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
+var ProductInfo = require('./ProductInfo');
 var Modal = require('boron/ScaleModal');
 var Tags = require('./Tags');
+
+var C = require('../constants');
 
 var exports = {};
 
@@ -25,18 +28,13 @@ var ProductDetails = React.createClass({
         return (
             <div className="product-details">
                 <Modal ref="modal">
-                    <div className="">
-                        <img src={this.state.photo} alt={this.state.title}/>
-                    </div>
-
                     <button className="modal__close" onClick={this.hide}></button>
 
-                    <div className="">
-                        <h4>{this.state.name}</h4>
-                        <p className="text-muted">{this.state.description}</p>
-                        <Tags tags={this.state.tags}/>
+                    <div className="product-details__photo">
+                        <img src={this.state.photo || C.PRODUCT_DEFAULTS.PHOTO} alt={this.state.title}/>
                     </div>
 
+                    <ProductInfo data={this.state} detailed={true}/>
                 </Modal>
             </div>
         )

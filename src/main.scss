@@ -5,14 +5,11 @@
 @import 'components/Filter';
 @import 'components/ProductList';
 @import 'components/ProductDetails';
+@import 'components/ProductInfo';
 @import 'components/Product';
 @import 'components/Tags';
 
 body {
   background-color: material-color('blue-grey', '700');
   font-family: system, sans-serif;
-}
-
-.modal__close {
-
 }

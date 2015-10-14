@@ -1,12 +1,15 @@
 var React = require('react');
 
+var utils = require('../utils');
 var filterStore = require('../stores/FilterStore');
 
 module.exports = React.createClass({
     displayName: 'Tags',
 
-    componentDidMount: function() {
-
+    getDefaultProps: function() {
+        return {
+            triggerable: false
+        }
     },
 
     handleClick: function(tag) {
@@ -15,7 +18,11 @@ module.exports = React.createClass({
 
     render: function() {
         var tags = this.props.tags.map(tag => {
-            return <div className="tag badge" onClick={this.handleClick.bind(this, tag)} key={tag}>{tag}</div>;
+            return (
+            <div className="tag badge" onClick={
+                this.props.triggerable ? this.handleClick.bind(this, tag) : utils.noop
+            } key={tag}>{tag}</div>
+            );
         });
 
         return (
