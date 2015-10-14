@@ -1,12 +1,3 @@
-Nothing special here,
+Running version for quick look:
 
-    \/
-```
-npm install
-```
-    \/
-```
-node server
-```
-    \/
-[http://localhost:5544/](http://localhost:5544/ "localghost")
+ https://mnztzcpzth.localtunnel.me
