@@ -1,0 +1,20 @@
+.product__photo {
+  img {
+    width: 100%;
+  }
+
+  &--thumbnail {
+    margin: -5px;
+    float: right;
+
+    background-position: center center;
+    background-size: cover;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    width: 100px;
+    height: 100px;
+  }
+}

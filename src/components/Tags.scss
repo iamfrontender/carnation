@@ -1,5 +1,7 @@
 .tags {
   .tag {
+    margin-right: 2px;
+
     &:hover {
       cursor: pointer;
       background-color: material-color('grey', '500');

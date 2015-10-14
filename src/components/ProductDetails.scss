@@ -1,9 +1,4 @@
 .product-details {
-
-  &__photo img {
-    width: 100%;
-  }
-
   &__info {
     padding: 10px;
   }
@@ -13,10 +8,7 @@
     height: 50px;
 
     @include button(material-color('grey', '100'));
-
-    &:before {
-      content: '\2715';
-    }
+    @include icon-close();
 
     position: absolute;
     right: 0;

@@ -21,18 +21,6 @@
   }
 
   &__photo {
-    margin: -5px;
 
-    width: 100px;
-    height: 100px;
-
-    float: right;
-
-    background-position: center center;
-    background-size: cover;
-
-    &:hover {
-      cursor: pointer;
-    }
   }
 }

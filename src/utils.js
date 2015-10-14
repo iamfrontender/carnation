@@ -1,4 +1,7 @@
 var utils = {
+    noop: function() {
+
+    },
     has: function(arr, item) {
         return arr.indexOf(item) !== -1;
     },

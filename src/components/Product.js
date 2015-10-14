@@ -2,6 +2,7 @@ var React = require('react');
 var C = require('../constants');
 
 var ProductInfo = require('./ProductInfo');
+var ProductPhoto = require('./ProductPhoto');
 var ProductDetails = require('./ProductDetails');
 
 module.exports = React.createClass({
@@ -26,7 +27,12 @@ module.exports = React.createClass({
             <div className="product col-xs-6 col-md-4 col-lg-3">
                 <div className="product__container plate clearfix">
                     <ProductInfo data={this.props.data} />
-                    <div className="product__photo" onClick={this._showDetails} style={photoStyle}></div>
+                    <ProductPhoto
+                        data={this.props.data}
+                        thumbnail={true}
+                        onClick={this._showDetails}
+
+                    />
                 </div>
             </div>
         );
