@@ -1,0 +1,40 @@
+{
+  "name": "carnation",
+  "version": "1.0.0",
+  "description": "Carnation for yesterdays interview",
+  "main": "server.js",
+  "dependencies": {
+    "boron": "^0.1.2",
+    "express": "^4.13.3",
+    "browserify": "^11.2.0",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
+    "gutil": "^1.6.4",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "literalify": "^0.4.0",
+    "react-modal": "^0.5.0",
+    "reactify": "^1.1.1",
+    "sass-material-colors": "^0.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamfrontender/carnation.git"
+  },
+  "keywords": [
+    "iamfrontender"
+  ],
+  "author": "iamfrontender",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/iamfrontender/carnation/issues"
+  },
+  "homepage": "https://github.com/iamfrontender/carnation#readme"
+}
