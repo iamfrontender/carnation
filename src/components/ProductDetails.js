@@ -22,6 +22,8 @@ var ProductDetails = React.createClass({
     },
 
     hide: function() {
+        this.setState({});
+
         this.refs.modal.hide();
     },
 

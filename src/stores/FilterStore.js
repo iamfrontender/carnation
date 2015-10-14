@@ -1,10 +1,19 @@
 var utils = require('../utils');
 
+/**
+ * Store for product filters.
+ *
+ * @constructor
+ * @singleton
+ */
 var FilterStore = function() {
     this.listeners = {};
     this.filters = [];
 };
 
+/**
+ * @prototype
+ */
 FilterStore.prototype = {
     on: function(event, listener) {
         this.listeners[event] = this.listeners[event] || [];
