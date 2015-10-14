@@ -4,13 +4,14 @@ var sass = require('gulp-sass');
 
 gulp.task('scripts', function() {
     var browserify = require('gulp-browserify'),
-        reactify = require('reactify');
+        reactify = require('reactify'),
+        uglify = require('uglifyify');
 
     return gulp.src('src/app.js')
         .pipe(browserify({
             debug: true,
             extensions: ['.jsx', '.js', '.json'],
-            transform: [reactify]
+            transform: [reactify, uglify]
         }))
         .on('error', function(err) {
             gutil.log(err.message)
