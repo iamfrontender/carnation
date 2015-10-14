@@ -1,3 +1,3 @@
 Running version for quick look:
 
-https://tpoxtesssk.localtunnel.me
+https://tpoxtesssk.localtunnel.me -- offline
