@@ -14,6 +14,7 @@ module.exports = React.createClass({
 
     componentDidMount: function() {
         this.listeners();
+        productStore.load();
     },
 
     listeners: function() {

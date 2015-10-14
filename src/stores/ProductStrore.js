@@ -1,3 +1,4 @@
+var C = require('../constants');
 var utils = require('../utils.js');
 var filterStore = require('./FilterStore.js');
 
@@ -13,9 +14,19 @@ ProductStore.prototype = {
     TAG_SPLITTER: ',',
 
     init: function() {
-        this.add(window.products);
-
         filterStore.on('change', this.filter.bind(this));
+    },
+
+    load: function() {
+        superagent
+            .get(C.ENDPOINTS.API.PRODUCTS)
+            .end(function(err, res) {
+                if (err) {
+                    console.error(err);
+                } else {
+                    this.add(res.body);
+                }
+            }.bind(this));
     },
 
     on: function(event, listener) {
